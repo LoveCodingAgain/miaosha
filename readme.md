@@ -9,7 +9,7 @@
   Html,JavaScript,CSS,Jquery,Bootstrap,layui.<br/>
   ---
 2. 后台技术<br/>
-  SpringBoot 1.5.8,MyBatis,Thymeleaf模板引擎3.0,Druid数据库连接池.
+  SpringBoot 1.5.8,MyBatis,Thymeleaf模板引擎2.0(3.0没有那个SpringWebContext),Druid数据库连接池.
   ---
 3. 数据库<br/>
    MySQL5.7
@@ -25,8 +25,15 @@
   ---
 7. 压测工具<br/>
    JMeter,1000个线程循环10次.10000次请求,聚合报告的方式.查看系统QPS.
+  --- 
+8. 代码优化<br/>
+   使用Lombok来优化set/get方法,减少项目的臃肿.
+  ---
+9  项目性能监控<br/>
+   后面差分为微服务的架构,使用SpringAdmin进行监控项目.
+  ---   
 ##### 三. 项目技术整理
-1. 项目的       
+1. 使用两次MD5加密.       
       
        
      

@@ -1,10 +1,13 @@
 package com.lx.miaosha.vo;
 
 import com.lx.miaosha.validator.IsMobile;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.validator.constraints.Length;
-
 import javax.validation.constraints.NotNull;
 
+@Setter
+@Getter
 public class LoginVo {
 	
 	@NotNull
@@ -14,19 +17,7 @@ public class LoginVo {
 	@NotNull
 	@Length(min=32)
 	private String password;
-	
-	public String getMobile() {
-		return mobile;
-	}
-	public void setMobile(String mobile) {
-		this.mobile = mobile;
-	}
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
+
 	@Override
 	public String toString() {
 		return "LoginVo [mobile=" + mobile + ", password=" + password + "]";
